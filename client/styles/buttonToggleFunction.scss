@@ -1,0 +1,32 @@
+@mixin flexPosition {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.app-title p {
+  margin: auto;
+  font-size: 3em;
+}
+
+.toggle-button-container {
+  margin-top: 2em;
+  @include flexPosition();
+  margin-top: 2em;
+}
+
+.toggle-button-container button {
+  width: 4em;
+  height: 4em;
+  background-color: yellow;
+  border-radius: 50em;
+  outline: none;
+}
+
+.toggle-instruct {
+  @include flexPosition();
+  margin-top: 1em;
+  font-size: 20px;
+}

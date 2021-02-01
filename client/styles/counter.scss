@@ -1,0 +1,39 @@
+@mixin flexPosition {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.counter-container {
+  @include flexPosition();
+  margin-top: 2em;
+}
+
+.counter {
+  margin-top: 1em;
+}
+
+.counter p {
+  font-size: 20px;
+}
+
+.counter-container button {
+  width: 3em;
+  height: 3em;
+  border-radius: 50em;
+  outline: none;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+.counter-container span {
+  display: flex;
+  align-items: center;
+}
+
+.counter-container button,
+.counter-container span {
+  margin: 0.8em;
+}
