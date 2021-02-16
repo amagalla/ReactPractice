@@ -1,0 +1,31 @@
+html {
+  height: 100vh;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20em;
+}
+
+.container {
+  border: solid;
+  margin-top: 1em;
+}
+
+.box1,
+.box2,
+.box3 {
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1,
+.content2,
+.content3 {
+  width: 80%;
+  margin: auto;
+  display: none;
+}
