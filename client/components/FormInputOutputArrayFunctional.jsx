@@ -7,6 +7,7 @@ const FormInputOutputArrayFunctional = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setName((prevName) => ({
       ...prevName,
       [name]: value,
@@ -15,12 +16,12 @@ const FormInputOutputArrayFunctional = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setNamesArr((prevName) => [...prevName, name]);
+    setNamesArr((prevNames) => [...prevNames, name]);
   };
 
-  const namesArrOutput = namesArr.map((names, i) => (
+  const namesArrOutput = namesArr.map((name, i) => (
     <div key={i}>
-      {names.firstName} {names.lastName}
+      {name.firstName} {name.lastName}
     </div>
   ));
 
