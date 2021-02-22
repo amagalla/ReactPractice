@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "../styles/formInputOutputArray.scss";
 
 const FormInputOutputArrayFunctional = () => {
-  const [nameInput, useNameInput] = useState({ firstName: "", lastName: "" });
-  const [namesArr, useNamesArr] = useState([]);
+  const [name, setName] = useState({ firstName: "", lastName: "" });
+  const [namesArr, setNamesArr] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    useNameInput((prevName) => ({
+    setName((prevName) => ({
       ...prevName,
       [name]: value,
     }));
@@ -15,11 +15,11 @@ const FormInputOutputArrayFunctional = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    useNamesArr((prevArr) => [...prevArr, nameInput]);
+    setNamesArr((prevName) => [...prevName, name]);
   };
 
-  const namesArrOutput = namesArr.map((names) => (
-    <div>
+  const namesArrOutput = namesArr.map((names, i) => (
+    <div key={i}>
       {names.firstName} {names.lastName}
     </div>
   ));
@@ -32,14 +32,14 @@ const FormInputOutputArrayFunctional = () => {
             type='text'
             placeholder='Enter Firstname'
             name='firstName'
-            value={nameInput.firstName || ""}
+            value={name.firstName || ""}
             onChange={handleChange}
           />
           <input
             type='text'
             placeholder='Enter Lastname'
             name='lastName'
-            value={nameInput.lastName || ""}
+            value={name.lastName || ""}
             onChange={handleChange}
           />
           <button>Submit</button>
