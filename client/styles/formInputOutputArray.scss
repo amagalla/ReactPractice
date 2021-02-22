@@ -1,0 +1,38 @@
+@mixin flexPosition {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.inputOutput-container {
+  @include flexPosition();
+  margin-top: 2em;
+}
+
+.inputOutput-container form input {
+  display: block;
+  margin-top: 1em;
+}
+
+.inputOutput-container form button {
+  margin-top: 1em;
+  width: 4em;
+  height: 3em;
+  border-radius: 10px;
+}
+
+.submit-output-container {
+  @include flexPosition();
+  margin-top: 1em;
+}
+
+.submit-output-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-output-container div {
+  margin-top: 0.5em;
+}

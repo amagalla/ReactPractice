@@ -14,12 +14,12 @@ const counterFunctional = () => {
 
   return (
     <>
-      <div className="counter-container">
+      <div className='counter-container'>
         <button onClick={decrement}>-</button>
         <span>{value}</span>
         <button onClick={increment}>+</button>
       </div>
-      <div className="counter-container counter">
+      <div className='counter-container counter'>
         <p>Increment/Decrement Counter Functional</p>
       </div>
     </>
