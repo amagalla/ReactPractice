@@ -6,6 +6,12 @@
   margin: auto;
 }
 
+.inputOutput-title {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 20px;
+}
+
 .inputOutput-container {
   @include flexPosition();
   margin-top: 2em;

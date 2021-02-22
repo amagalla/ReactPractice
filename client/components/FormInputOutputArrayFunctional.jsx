@@ -17,6 +17,10 @@ const FormInputOutputArrayFunctional = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setNamesArr((prevNames) => [...prevNames, name]);
+    setName({
+      firstName: "",
+      lastName: "",
+    });
   };
 
   const namesArrOutput = namesArr.map((name, i) => (
@@ -27,6 +31,7 @@ const FormInputOutputArrayFunctional = () => {
 
   return (
     <>
+      <div className='inputOutput-title'>This is Functional Component</div>
       <div className='inputOutput-container'>
         <form onSubmit={handleSubmit}>
           <input

@@ -5,6 +5,7 @@ import Title from "./components/Title";
 import CounterFunctional from "./components/CounterFunctional";
 import CounterClass from "./components/CounterClass";
 import FormInputOutputArrayFunctional from "./components/FormInputOutputArrayFunctional";
+import FormInputOutputArrayClass from "./components/FormInputOutputArrayClass";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <CounterFunctional />
       <CounterClass />
       <FormInputOutputArrayFunctional />
+      <FormInputOutputArrayClass />
     </>
   );
 }
