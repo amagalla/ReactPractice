@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import "../styles/counter.scss";
+import counterHook from "../customHooks/counterHook";
 
 const counterFunctional = () => {
-  const [value, useValue] = useState(0);
-
-  const increment = () => {
-    useValue((value) => value + 1);
-  };
-
-  const decrement = () => {
-    useValue((value) => value - 1);
-  };
+  const [value, increment, decrement] = counterHook();
 
   return (
     <>

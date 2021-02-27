@@ -12,9 +12,8 @@
 }
 
 .toggle-button-container {
-  margin-top: 2em;
   @include flexPosition();
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .toggle-button-container button {

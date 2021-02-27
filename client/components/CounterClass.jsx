@@ -26,13 +26,13 @@ class CounterClass extends Component {
   render() {
     return (
       <>
-        <div className="counter-container">
+        <div className='counter-container'>
           <button onClick={this.decrement}>-</button>
           <span>{this.state.value}</span>
           <button onClick={this.increment}>+</button>
         </div>
-        <div className="counter-container counter">
-          <p>Increment/Decrement Counter Functional</p>
+        <div className='counter-container counter'>
+          <p>Increment/Decrement Counter Class</p>
         </div>
       </>
     );

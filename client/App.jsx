@@ -6,6 +6,8 @@ import CounterFunctional from "./components/CounterFunctional";
 import CounterClass from "./components/CounterClass";
 import FormInputOutputArrayFunctional from "./components/FormInputOutputArrayFunctional";
 import FormInputOutputArrayClass from "./components/FormInputOutputArrayClass";
+import SearchInputFunctional from "./components/SearchInputFunctional";
+import SearchInputClass from "./components/SearchInputClass";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <CounterClass />
       <FormInputOutputArrayFunctional />
       <FormInputOutputArrayClass />
+      <SearchInputFunctional />
+      <SearchInputClass />
     </>
   );
 }
